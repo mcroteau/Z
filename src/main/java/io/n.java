@@ -13,17 +13,14 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 // Read the full article https://dev.to/mateuszjarzyna/build-your-own-http-server-in-java-in-less-than-one-hour-only-get-method-2k02
-public class oLL {
+public class n {
 
     public static final int DEFAULT_BUFFER_SIZE = 8192;
 
     public static void main( String[] args ) throws Exception {
         try (ServerSocket serverSocket = new ServerSocket(3001, 4000)) {
             while (true) {
-                try (Socket client = serverSocket.accept()) {
-                    if(client.isConnected())
-                        handleClient(client);
-                }
+                new HttpConsumer(serverSocket).run();
             }
         }
 //        ServerSocket serverSocket = new ServerSocket(3001, 3000);
@@ -74,11 +71,10 @@ public class oLL {
             String dataString = "";
             do {
                 bytesRead = inputStream.read(buff);
-                bao.write(bytesRead);
+                bao.write(buff, 0, bytesRead);
                 dataString += new String(buff, 0, bytesRead);
             }while(inputStream.available() > 0);
 
-            System.out.println("MESSAGE: " + dataString);
 
         }catch (Exception e) {
             e.printStackTrace();

@@ -17,7 +17,7 @@ public class IOtT {
     Map<String, HttpRunnable> runnables;
 
     ServerSocket serverSocket = null;
-    Logger logger = Logger.getLogger("oLL");
+    Logger logger = Logger.getLogger("n");
 
     protected Boolean shutdown = false;
 

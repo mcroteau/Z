@@ -43,7 +43,7 @@
 <!--                        <manifest>-->
 <!--                            <addClasspath>true</addClasspath>-->
 <!--                            <classpathPrefix>lib/</classpathPrefix>-->
-<!--                            <mainClass>io.oLL</mainClass>-->
+<!--                            <mainClass>io.Nikkiki</mainClass>-->
 <!--                        </manifest>-->
 <!--                    </archive>-->
 <!--                </configuration>-->
@@ -54,7 +54,7 @@
                 <version>3.0.0</version>
                 <configuration>
                     <executable>maven</executable>
-                    <mainClass>io.oLL</mainClass>
+                    <mainClass>io.n</mainClass>
                     <workingDirectory>tmp</workingDirectory>
                 </configuration>
             </plugin>
@@ -64,11 +64,11 @@
 <!--                    <descriptorRefs>-->
 <!--                        <descriptorRef>jar-with-dependencies</descriptorRef>-->
 <!--                    </descriptorRefs>-->
-<!--                    <finalName>oLL</finalName>-->
+<!--                    <finalName>n</finalName>-->
 <!--                    <appendAssemblyId>false</appendAssemblyId>-->
 <!--                    <archive>-->
 <!--                        <manifest>-->
-<!--                            <mainClass>io.oLL</mainClass>-->
+<!--                            <mainClass>io.Nikkiki</mainClass>-->
 <!--                        </manifest>-->
 <!--                    </archive>-->
 <!--                </configuration>-->

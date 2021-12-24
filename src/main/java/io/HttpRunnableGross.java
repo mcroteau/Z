@@ -119,8 +119,8 @@ public class HttpRunnableGross implements Runnable {
 //            }
 
 
-            HttpRequest req = new HttpRequest();
-            HttpResponse resp = new HttpResponse();
+            RequestObject req = new RequestObject();
+//            HttpResponse resp = new HttpResponse();
 
 
             SimpleDateFormat sdf = new SimpleDateFormat("E, dd MMM yyyy hh:mm:ss z");
@@ -139,7 +139,7 @@ public class HttpRunnableGross implements Runnable {
 
                 System.out.println("serve ::: " + servlet);
 
-                Object[] parameters = {req, resp};
+//                Object[] parameters = {req, resp};
 
                 //                    Method init = servlet.getClass().getDeclaredMethod("init", ServletConfig.class);
                 //                    init.setAccessible(true);
